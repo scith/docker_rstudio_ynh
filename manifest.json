@@ -1,0 +1,53 @@
+{
+    "name": "RStudio Container",
+    "id": "dockerrstudio",
+    "description": {
+        "en": "RStudio is a web development environment for R (statistics). It runs through Docker.",
+        "fr": "RStudio est un environnement de développement web pour R (statistiques). Il est exécuté via Docker."
+    },
+    "developer": {
+        "name": "scith"
+    },
+    "multi_instance": "false",
+    "arguments": {
+        "install" : [
+            {
+                "name": "domain",
+                "type": "domain",
+                "ask": {
+                    "en": "Choose a domain for the RStudio container",
+                    "fr": "Choisissez un domaine pour le conteneur RStudio"
+                },
+                "example": "domain.org"
+            },
+            {
+                "name": "path",
+                "type": "path",
+                "ask": {
+                    "en": "Choose a path for the RStudio container",
+                    "fr": "Choisissez un chemin pour le conteneur RStudio"
+                },
+                "example": "/rstudio",
+                "default": "/rstudio"
+            },
+            {
+                "name": "user",
+                "ask": {
+                    "en": "Choose a login for your RStudio account",
+					"fr": "Veuillez choisir un identifiant pour votre compte RStudio"
+                },
+                "example": "rstudio",
+                "default": "rstudio"
+            },
+			{
+                "name": "password",
+                "ask": {
+                    "en": "Choose a password for your RStudio account",
+					"fr": "Veuillez choisir un mot de passe pour votre compte RStudio"
+                },
+                "example": "rstudio",
+                "default": "rstudio"
+            }
+        ]
+    }
+}
